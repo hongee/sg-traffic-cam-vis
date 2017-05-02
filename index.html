@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Traffic Image Visualizer</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/css/uikit.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" href="./static/main.css" />
+    </head>
+    <body>
+      <div id="map" uk-height-viewport class="uk-container uk-container-expand">
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit-icons.min.js"></script>
+      <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.1.15/leaflet-providers.min.js"></script>
+      <script src="./static/main.js"></script>
+    </body>
+    <div id="show" uk-modal="center: true">
+      <div class="uk-modal-dialog uk-modal-body">
+          <button class="uk-modal-close-outside" type="button" uk-close></button>
+          <img id="shown-img" src="https://images.data.gov.sg/api/traffic-images/2017/05/7d7ca0da-727a-460e-9af6-5f41e0e81ea6.jpg" />
+          <input id="img-sel" type="range" min="0" max="49" step="1" value="49" />
+      </div>
+    </div>
+</html>

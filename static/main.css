@@ -1,0 +1,25 @@
+.icon {
+  opacity: 0.5;
+}
+
+.leaflet-popup-content {
+  margin: 5px;
+}
+
+.leaflet-popup-content:hover {
+  width: 300px !important;
+  z-index: 999999999;
+}
+
+.traffic-img {
+  min-width: 12em;
+}
+
+#shown-img {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+#img-sel {
+  width: 100%;
+}
